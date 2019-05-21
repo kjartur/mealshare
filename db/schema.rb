@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_05_20_141450) do
 
   create_table "meals", force: :cascade do |t|
     t.string "meal_type"
-    t.time "time"
+    t.datetime "time"
     t.text "topic"
     t.integer "seats"
     t.datetime "created_at", null: false
