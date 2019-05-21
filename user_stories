@@ -1,0 +1,13 @@
+As a user, I can:
+  create a profile
+  update a profile I created
+  delete a profile I created
+
+  Create a meal
+    * set: :time, :topic, :meal_type, :seats
+  update a meal I created
+  delete a meal I created
+
+  write a review for a meal_type
+  update a review I created
+  delete a review I created
