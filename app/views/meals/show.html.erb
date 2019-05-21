@@ -1,0 +1,13 @@
+<h1>A <%=@meal.meal_type%> has just been created</h1>
+<ul>
+  <li>ID: <%=@meal.id%></li>
+  <li>Date: <%=@meal.date%></li>
+  <li>Time: <%=@meal.time%></li>
+  <li>Conversation topic: <%=@meal.topic%></li>
+  <li>Seats: <%=@meal.seats%></li>
+</ul>
+
+
+
+
+<%=link_to 'destroy', meal_path(@meal), method: :delete, data: { confirm: "Are you sure?" }%>
