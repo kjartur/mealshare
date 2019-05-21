@@ -1,13 +1,24 @@
 As a user, I can:
-  create a profile
-  update a profile I created
-  delete a profile I created
+  Create a profile
+  (Edit a profile I created)
+  (Delete a profile I created)
 
   Create a meal
     * set: :time, :topic, :meal_type, :seats
-  update a meal I created
-  delete a meal I created
+  (Edit a meal I created)
+  Delete a meal I created
+  
+  Search for meals in my city
+  View a list of meals
+  View a meal page (meal:id), where I can book a meal by clicking on a button
+  (View/locate meals on a map)
 
-  write a review for a meal_type
-  update a review I created
-  delete a review I created
+  Write a review for a booking
+  (Edit a review I created)
+  (Delete a review I created)
+  View a users profile
+  List reviews on a users profile
+
+  (Receive an email when someone books a meal)
+  (View a page where I can accept or reject a new booking (when I host a meal))
+  
