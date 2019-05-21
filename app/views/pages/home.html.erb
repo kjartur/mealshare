@@ -4,10 +4,27 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://3x39fmt0aja34zifjfnu4695x-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/180619-dinner-parties-top2.jpg);">
   <div class="container">
     <h1>MealShare brings <strong>people</strong> together to <strong>share a meal</strong>.</h1>
+    <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <input class="form-control py-2 rounded-pill mr-2 pr-5 string required" type="text" name="search[query]" id="search_query" value="Enter city to find meals near you" />
+
+  </div>
+  <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+<% end %>
   </div>
 </div>
 
-
+<!-- <div class="cntr">
+  <div class="cntr-innr">
+    <label class="search" for="inpt_search">
+      <input id="inpt_search" type="text" />
+    </label>
+    <p>Hover to see the magic.</p>
+  </div>
+</div>
+ -->
 <div id="link list">
   <ul>
     <% @meals.each do |meal|%>
