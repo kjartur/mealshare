@@ -18,15 +18,17 @@
   </div>
 </div>
 
-
-<div id="link list">
-  <ul>
-    <% @meals.each do |meal|%>
-      <li><%=link_to meal.title, meal_path(meal)%></li>
-    <% end%>
-  </ul>
-  <%= link_to "Create a meal", new_meal_path%>
+<div class="container" align="center">
+  <br>
+  <br>
+  <div class="btn btn-primary">
+    <%= link_to 'New meal', new_meal_path, :class => "btn" %>
+  </div>
 </div>
+
+<p>
+<p>
+
 
 <div class="container">
 
@@ -48,3 +50,9 @@
        <% end %>
  </div>
 </div>
+
+
+
+
+
+
