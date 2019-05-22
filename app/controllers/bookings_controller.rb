@@ -6,7 +6,7 @@ class BookingsController < ApplicationController
 
   def new
     @user = current_user
-    @meals = Meal.find(params[:meal_id])
+    @meal = Meal.find(params[:meal_id])
     @booking = Booking.new
   end
 
