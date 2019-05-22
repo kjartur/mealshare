@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
 
   def index
-    @bookings = Booking.all
+    @bookings = current_user.bookings
   end
 
   def new
@@ -12,14 +12,14 @@ class BookingsController < ApplicationController
 
   def create
     @user = current_user
-    @meals = Meal.find(params[:meal_id])
+    @meal = Meal.find(params[:meal_id])
     @booking = Booking.new(booking_params)
+    @booking.user = current_user
     @booking.meal = @meal
     if @booking.save
-      redirect_to meal_path(@meal)
+      redirect_to bookings_path(@meal)
     else
-      @review = Review.new
-      render "meals/show"
+      render :new
     end
   end
 
@@ -29,7 +29,7 @@ class BookingsController < ApplicationController
 
   private
 
-  def review_params
-    params.require(:booking).permit(:content)
+  def booking_params
+    params.require(:booking).permit(:seats)
   end
 end

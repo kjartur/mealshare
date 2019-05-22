@@ -1,1 +1,14 @@
 <h1>My Bookings</h1>
+<%# my_bookings = [] %>
+<%#= @bookings.each do |booking| %>
+  <%# my_bookings << Meal.find(booking.user_id)%>
+<%#= end %>
+<%#raise%>
+
+<div id="link list">
+  <ul>
+    <% @bookings.each do |booking|%>
+      <li><%=link_to booking, bookings_path(booking)%></li>
+    <% end%>
+  </ul>
+</div>
