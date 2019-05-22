@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
 
   def index
-    @bookings = bookings.all
+    @bookings = Booking.all
   end
 
   def create
@@ -13,5 +13,7 @@ class BookingsController < ApplicationController
     else
       @review = Review.new
       render "meals/show"
+    end
   end
+
 end
