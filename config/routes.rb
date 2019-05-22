@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :meals do
     resources :bookings, only: [:index, :new, :create]
   end
+  get "/my_bookings", to: "bookings#my_bookings"
 end
