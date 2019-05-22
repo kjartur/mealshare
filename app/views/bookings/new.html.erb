@@ -1,5 +1,4 @@
 <%= simple_form_for [@meal, @booking] do |f| %>
-  <%#= f.select :seats, label: 'How many seats do you want to reserve?' %>
   <%= f.input :seats, :label => "How many seats do you want to reserve?", :collection => (1..@meal.seats).to_a, :selected => 1 %>
   <%= f.submit "Book this meal", class: "btn btn-primary" %>
 <% end %>

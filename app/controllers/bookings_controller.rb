@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
 
   def index
-    @bookings = Booking.all
+    @bookings = current_user.bookings
   end
 
   def new
@@ -17,7 +17,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.meal = @meal
     if @booking.save
-      redirect_to meal_bookings_path(@meal)
+      redirect_to bookings_path(@meal)
     else
       render :new
     end
