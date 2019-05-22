@@ -1,7 +1,9 @@
-<h1>My Meals:</h1>
+<div class='container'>
+ <h1>My Meals:</h1>
 
-<ul>
+ <ul>
   <% @meals.each do |meal| %>
   <li><%=link_to meal.title, meal_path(meal)%></li>
   <%end%>
-</ul>
+ </ul>
+</div>
