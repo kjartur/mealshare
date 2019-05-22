@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <h1><%=@meal.meal_type%></h1>
+=======
+<h1><%=@meal.title%></h1>
+>>>>>>> master
 <ul>
   <li>ID: <%=@meal.id%></li>
   <li>Date: <%=@meal.date%></li>
@@ -7,10 +11,5 @@
   <li>Seats: <%=@meal.seats%></li>
 </ul>
 
-
-<%= link_to 'Book this meal', new_meal_booking_path(@meal) %>
-
-<br>
-<br>
 
 <%=link_to 'destroy', meal_path(@meal), method: :delete, data: { confirm: "Are you sure?" }%>

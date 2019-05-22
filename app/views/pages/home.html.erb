@@ -22,7 +22,7 @@
 <div id="link list">
   <ul>
     <% @meals.each do |meal|%>
-      <li><%=link_to meal.id, meal_path(meal)%></li>
+      <li><%=link_to meal.title, meal_path(meal)%></li>
     <% end%>
   </ul>
   <%= link_to "Create a meal", new_meal_path%>
