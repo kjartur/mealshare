@@ -23,10 +23,13 @@ class BookingsController < ApplicationController
     end
   end
 
+  def my_bookings
+    # @bookings = Bookings.where()
+  end
+
   private
 
   def booking_params
     params.require(:booking).permit(:seats)
   end
 end
-

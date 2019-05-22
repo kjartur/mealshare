@@ -3,6 +3,18 @@ class MealsController < ApplicationController
     @meal = Meal.new
   end
 
+  def index
+    # temp_meals = []
+    # Meal.all.each do |meal|
+    #   if meal.user_id == current_user.id
+    #     temp_meals << meal
+    #   end
+    # end
+
+    @meals = Meal.where(user: current_user)
+
+  end
+
   def show
     @meal = Meal.find(params[:id])
   end

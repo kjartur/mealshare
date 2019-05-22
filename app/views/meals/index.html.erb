@@ -1,0 +1,7 @@
+<h1>My Bookings</h1>
+
+<ul>
+  <% @meals.each do |meal| %>
+  <li><%=link_to meal.title, meal_path(meal)%></li>
+  <%end%>
+</ul>
