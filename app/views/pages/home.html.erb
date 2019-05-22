@@ -3,7 +3,7 @@
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://3x39fmt0aja34zifjfnu4695x-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/180619-dinner-parties-top2.jpg);">
   <div class="container">
-    <h1>MealShare brings <strong>people</strong> together to <strong>share a meal</strong>.</h1>
+    <h1>MealShare brings <strong>people</strong> together to share <strong>meals & ideas</strong>.</h1>
     <%= simple_form_for :search, url: root_path, method: :get do |f| %>
   <div class="search-form-control form-group">
     <input class="form-control py-2 rounded-pill mr-2 pr-5 string required" type="text" name="search[query]" id="search_query" value="Enter city to find meals near you" />
@@ -22,7 +22,7 @@
   <br>
   <br>
   <div class="btn btn-primary">
-    <%= link_to 'New meal', new_meal_path, :class => "btn" %>
+    <%= link_to 'Host', new_meal_path, :class => "btn" %>
   </div>
 </div>
 
@@ -39,7 +39,7 @@
 
 
     <div class="col-xs-12 col-md-4">
-       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img.delicious.com.au/F_C2-w6_/w759-h506-cfill/del/2015/11/summer-cocktails-24374-3.jpg)">
+       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg)">
           <%= link_to "", meal, class: "card-link" %>
         <div>
           <h3><%= meal.meal_type  %>:</h3><p>
