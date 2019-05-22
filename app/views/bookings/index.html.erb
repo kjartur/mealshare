@@ -1,15 +1,12 @@
 <div class='container'>
  <h1>My Bookings</h1>
-<%# my_bookings = [] %>
-<%#= @bookings.each do |booking| %>
-  <%# my_bookings << Meal.find(booking.user_id)%>
-<%#= end %>
-<%#raise%>
 
- <div id="link list">
+<div id="link list">
   <ul>
     <% @bookings.each do |booking|%>
-      <li><%=link_to booking, bookings_path(booking)%></li>
+    <% @meals.each do |meal|  %>
+      <li><%=link_to booking.meal.title, meal_path(meal)%></li>
+    <% end %>
     <% end%>
   </ul>
  </div>

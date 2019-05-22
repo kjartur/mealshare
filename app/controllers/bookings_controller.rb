@@ -1,6 +1,7 @@
 class BookingsController < ApplicationController
 
   def index
+    @meals = Meal.where(user: current_user)
     @bookings = current_user.bookings
   end
 
