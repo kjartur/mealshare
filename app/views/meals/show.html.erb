@@ -9,6 +9,9 @@
 </ul>
 
 
+<%= link_to 'Book this meal', new_meal_booking_path(@meal) %>
 
+<br>
+<br>
 
 <%=link_to 'Delete meal', meal_path(@meal), method: :delete, data: { confirm: "Are you sure?" }%>
