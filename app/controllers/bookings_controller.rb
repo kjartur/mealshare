@@ -7,9 +7,11 @@ class BookingsController < ApplicationController
   def new
     @user = current_user
     @meals = Meal.find(params[:meal_id])
+    @booking = Booking.new
   end
 
   def create
+    @user = current_user
     @meals = Meal.find(params[:meal_id])
     @booking = Booking.new(booking_params)
     @booking.meal = @meal
@@ -21,4 +23,10 @@ class BookingsController < ApplicationController
     end
   end
 
+  private
+
+  def review_params
+    params.require(:booking).permit(:content)
+  end
 end
+
