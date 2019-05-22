@@ -28,4 +28,23 @@
   <%= link_to "Create a meal", new_meal_path%>
 </div>
 
+<div class="container">
 
+
+
+ <div class="row">
+  <% @meals.each do |meal| %>
+
+
+    <div class="col-xs-12 col-md-4">
+       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img.delicious.com.au/F_C2-w6_/w759-h506-cfill/del/2015/11/summer-cocktails-24374-3.jpg)">
+          <%= link_to "", meal, class: "card-link" %>
+        <div>
+          <h3><%= meal.meal_type  %>:</h3><p>
+          <h4><%= meal.title %></h4>
+        </div>
+       </div>
+     </div>
+       <% end %>
+ </div>
+</div>
