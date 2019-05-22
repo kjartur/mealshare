@@ -3,14 +3,14 @@ As a user, I can:
   (Edit a profile I created)
   (Delete a profile I created)
 
-  Create a meal - LINK WORKING, FORM MISSING
+  Create a meal - DONE
     * set: :time, :topic, :meal_type, :seats
   (Edit a meal I created)
-  Delete a meal I created
+  Delete a meal I created - DONE (TODO: only allow people to delete meals they have created)
   
   Search for meals in my city
-  View a list of meals
-  View a meal page (meal:id), where I can book a meal by clicking on a button
+  View a list of meals - DONE
+  View a meal page (meal:id) DONE (TODO: I can book a meal by clicking on a button on the  meal;id page
   (View/locate meals on a map)
 
   Write a review for a booking
@@ -22,6 +22,5 @@ As a user, I can:
   (Receive an email when someone books a meal)
   (View a page where I can accept or reject a new booking (when I host a meal))
 
-this is a small change
 
   
