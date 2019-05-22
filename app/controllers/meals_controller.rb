@@ -33,6 +33,6 @@ class MealsController < ApplicationController
   private
 
   def review_params
-    params.require(:meal).permit(:date, :time, :topic, :meal_type, :seats)
+    params.require(:meal).permit(:date, :time, :topic, :meal_type, :seats, :title, :address, :city, :post_code)
   end
 end
