@@ -1,3 +1,4 @@
+<div class='container'>
 <h1><%=@meal.title%></h1>
 <ul>
   <li>Meal: <%=@meal.meal_type%></li>
@@ -15,3 +16,5 @@
 <br>
 
 <%=link_to 'Delete meal', meal_path(@meal), method: :delete, data: { confirm: "Are you sure?" }%>
+
+</div>
