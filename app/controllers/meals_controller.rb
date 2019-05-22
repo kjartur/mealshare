@@ -4,14 +4,14 @@ class MealsController < ApplicationController
   end
 
   def index
-    temp_meals = []
-    Meal.all.each do |meal|
-      if meal.user_id == current_user.id
-        temp_meals << meal
-      end
-    end
+    # temp_meals = []
+    # Meal.all.each do |meal|
+    #   if meal.user_id == current_user.id
+    #     temp_meals << meal
+    #   end
+    # end
 
-    @meals = temp_meals
+    @meals = Meal.where(user: current_user)
 
   end
 
