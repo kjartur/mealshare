@@ -5,11 +5,14 @@ class BookingsController < ApplicationController
     @bookings = current_user.bookings
   end
 
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
   def new
     @user = current_user
     @meal = Meal.find(params[:meal_id])
     @booking = Booking.new
-
   end
 
   def create
@@ -27,6 +30,11 @@ class BookingsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy
   end
 
   def confirm
