@@ -53,5 +53,5 @@
   height: 600px;
   margin: 20px auto;"
   data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="pk.eyJ1Ijoia2phcnR1ciIsImEiOiJjanY4NDl1MDIwYnA4NGFteTB0d2xyanV3In0.EX_BUfnU8YcIbF8qicJ4Lg">
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
