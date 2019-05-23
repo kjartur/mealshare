@@ -9,6 +9,7 @@ class BookingsController < ApplicationController
     @user = current_user
     @meal = Meal.find(params[:meal_id])
     @booking = Booking.new
+
   end
 
   def create
@@ -18,12 +19,22 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.meal = @meal
     if @booking.save
-      redirect_to bookings_path(@meal)
+
+        # @booking.seats.save!
+        # @meal.seats -= @booking.seats
+        # @meal.seats.save!
+        redirect_to confirmed_path
     else
       render :new
     end
   end
 
+  def confirm
+    # @user = current_user
+    # @meal = Meal.find(params[:meal_id])
+    # @booking = Booking.new(booking_params) # GET THE POST parameters
+    # render :new if @booking.invalid? # Return if false
+  end
 
   private
 
@@ -31,10 +42,4 @@ class BookingsController < ApplicationController
     params.require(:booking).permit(:seats)
   end
 
-  def confirm
-    @user = current_user
-    @meal = Meal.find(params[:meal_id])
-    @booking = Booking.new(booking_params) # GET THE POST parameters
-    render :new if @booking.invalid? # Return if false
-  end
 end
