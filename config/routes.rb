@@ -11,4 +11,5 @@ Rails.application.routes.draw do
     end
   end
   get "/my_bookings", to: "bookings#my_bookings"
+  get "/confirmed", to: "bookings#confirm"
 end

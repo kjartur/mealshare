@@ -7,6 +7,9 @@
   <li>Time: <%=@meal.time%></li>
   <li>Conversation topic: <%=@meal.topic%></li>
   <li>Seats: <%=@meal.seats%></li>
+  <% @meal.bookings.each do |b| %>
+    <!-- <%= b.seats %> -->
+  <% end %>
 </ul>
 
 
