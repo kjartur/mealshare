@@ -1,0 +1,15 @@
+<%= simple_form_for :search, url: root_path, method: :get do |f| %>
+
+  <div class="search-form-control form-group">
+    <input
+      class="form-control py-2 rounded-pill mr-2 pr-5 string required"
+      type="text" name="query"
+      id="search_query"
+      placeholder="Enter city to find your meal"
+    />
+    <button type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+
+<% end %>
