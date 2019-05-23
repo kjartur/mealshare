@@ -1,0 +1,77 @@
+.card-trip {
+  margin: 30px auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #f7efe7;
+  text-align: left;
+  padding: 20px;
+  border-radius: 28px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 300px;
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.card-trip h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-trip .card-trip-buttons {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: -11px;
+  top: -313px;
+  width: 102px;
+}
+
+.card-trip-infos .card-trip-meal-type {
+  position: absolute;
+  background: #b5c594;
+  text-align: center;
+  padding: 7px;
+  border-radius: 28px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  right: 595px;
+  top: -309px;
+  width: 140px;
+}
