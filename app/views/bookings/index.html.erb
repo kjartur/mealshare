@@ -4,7 +4,7 @@
 <div id="link list">
   <ul>
     <% @bookings.each do |booking|%>
-      <li><%=link_to booking.meal.title, meal_path(booking.meal)%></li>
+      <li><%=link_to booking.meal.title, booking_path(booking)%></li>
     <% end %>
   </ul>
  </div>

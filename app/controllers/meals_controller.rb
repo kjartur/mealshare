@@ -25,9 +25,7 @@ class MealsController < ApplicationController
       redirect_to meal_path(@meal)
     else
       render :new
-   end
-
-
+    end
   end
 
   def edit
