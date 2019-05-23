@@ -48,6 +48,16 @@ end
     @meal.destroy
   end
 
+  def search
+    if params[:query].present?
+      @meals = Meal.near(params[:query], 10)
+    else
+      @meals = Meal.all
+      redirect_to "/"
+    end
+
+  end
+
   private
 
   def review_params

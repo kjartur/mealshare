@@ -10,5 +10,6 @@ Rails.application.routes.draw do
       post 'confirm'
     end
   end
+  get "/search", to: "meals#search"
   get "/my_bookings", to: "bookings#my_bookings"
 end
