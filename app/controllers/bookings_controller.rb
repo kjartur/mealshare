@@ -24,9 +24,13 @@ class BookingsController < ApplicationController
     end
   end
 
-  def my_bookings
-    # @bookings = Bookings.where()
+  def confirm
+    @user = current_user
+    @meal = Meal.find(params[:meal_id])
+    @booking = Booking.new(booking_params) # GET THE POST parameters
+    render :new if @booking.invalid? # Return if false
   end
+
 
   private
 
