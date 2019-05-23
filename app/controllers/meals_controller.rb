@@ -45,8 +45,7 @@ class MealsController < ApplicationController
     if params[:query].present?
       @meals = Meal.near(params[:query], 10)
     else
-      @meals = Meal.all
-      redirect_to "/"
+      @meals = Meal.all    
     end
 
   end
