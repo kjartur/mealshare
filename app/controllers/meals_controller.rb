@@ -13,7 +13,7 @@ class MealsController < ApplicationController
 
     @meals = Meal.where.not(latitude: nil, longitude: nil)
 
-    @markers = @meals.map do |flat|
+    @markers = @meals.map do |meal|
       {
         lat: meal.latitude,
         lng: meal.longitude
