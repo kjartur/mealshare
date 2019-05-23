@@ -23,4 +23,82 @@ As a user, I can:
   (View a page where I can accept or reject a new booking (when I host a meal))
 
 
+TODO for Thursday:
+
+MEAL PAGE
+
+  Title
+
+  Photo
+
+  Description text
+
+  Topic
+
+    - text
+
+  Map
+
+  Delete button (if you are the creator)
+  Edit button (if you are the creator)
+
+BOOKING CONFIRMATION
+
+   Headline: Booking #ID 
+   
+   Meal Title
+   Hosted by host name
+
+   Photo
+
+   Seats booked: 
+
+   Description text
+
+   Topic
+
+     - text
+
+   Map
+
+   Delete button (if you made the booking)
+ 
+   
+MY MEALS
+
+   List of meals I have created
+   Delete/edit button next to them
+
+
+SEARCH RESULTS
+
+   MAP VIEW
+
+   CARDS
+
+
+PROFILE PAGE
+
+   BIOGRAPHY 
+
+     - Bio text 
+
+   INTERESTS
+
+     - Tags or text
+
+   REVIEWS by other users
+
+      - name of user
+      - review text
+
+   MEAL HISTORY
+
+    
+
+
+
+
+
+
   
