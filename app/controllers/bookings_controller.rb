@@ -18,7 +18,10 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.meal = @meal
     if @booking.save
-      redirect_to bookings_path(@meal)
+        @meal.seats - @booking.seats
+        @meal.seats.save!
+        @booking.seats.save!
+        redirect_to bookings_path(@meal)
     else
       render :new
     end
