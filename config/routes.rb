@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   resources :meals do
     resources :bookings, only: [:new, :create]
   end
+  resources :bookings do
+    collection do
+      post 'confirm'
+    end
+  end
   get "/my_bookings", to: "bookings#my_bookings"
 end
