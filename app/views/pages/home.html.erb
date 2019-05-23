@@ -31,20 +31,18 @@
  <div class="row">
 
    <% @meals.each do |meal| %>
-   <%= link_to "", meal_path(meal), class: "card-link" %>
    <div class="col-xs-12 col-md-4">
      <div class="card-category"
      style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg)">
-       <div>
-          <h3><%= meal.meal_type %>:</h3><p>
-          <h4><%= meal.title %></h4>
-        </div>
+   <%= link_to "", meal_path(meal), class: "card-link" %>
+     <div>
+      <h3><%= meal.meal_type %>:</h3><p>
+        <h4><%= meal.title %></h4>
       </div>
     </div>
-    <% end %>
-
-  </div>
-
+   </div>
+   <% end %>
+ </div>
 </div>
 
 <div
