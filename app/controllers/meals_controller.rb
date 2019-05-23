@@ -4,13 +4,6 @@ class MealsController < ApplicationController
   end
 
   def index
-    # temp_meals = []
-    # Meal.all.each do |meal|
-    #   if meal.user_id == current_user.id
-    #     temp_meals << meal
-    #   end
-    # end
-
     @meals = Meal.where.not(latitude: nil, longitude: nil)
 
     @markers = @meals.map do |meal|
@@ -19,7 +12,7 @@ class MealsController < ApplicationController
         lng: meal.longitude
       }
     end
-end
+  end
 
   def show
     @meal = Meal.find(params[:id])
