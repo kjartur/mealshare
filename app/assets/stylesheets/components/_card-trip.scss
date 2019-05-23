@@ -1,3 +1,4 @@
+
 .card-trip {
   margin: 30px auto;
   width: 100%;
@@ -6,7 +7,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: #f7efe7;
+  background: #d6d6d6;
   text-align: left;
   padding: 20px;
   border-radius: 28px;
@@ -59,19 +60,94 @@
 
 .card-trip-infos .card-trip-user {
   position: absolute;
-  right: -11px;
-  top: -313px;
-  width: 102px;
+  right: 65px;
+  top: -64px;
+  width: 114px;
 }
 
 .card-trip-infos .card-trip-meal-type {
   position: absolute;
-  background: #b5c594;
+  background: #e4e4e4;
   text-align: center;
   padding: 7px;
   border-radius: 28px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  right: 595px;
-  top: -309px;
-  width: 140px;
+  right: 780px;
+  top: -291px;
+  width: 163px;
 }
+
+.card-trip-text {
+  color: black;
+}
+
+.btn-book {
+  color: #F7F7F7;
+  background-color: #48A369;
+  border-color: #DAD8E8;
+  border-radius: 10px;
+}
+
+.btn-book:hover,
+.btn-book:focus,
+.btn-book:active,
+.btn-book.active,
+.open .dropdown-toggle.btn-book {
+  color: #F7F7F7;
+  background-color: #58CC83;
+  border-color: #DAD8E8;
+}
+
+.btn-book:active,
+.btn-book.active,
+.open .dropdown-toggle.btn-book {
+  background-image: none;
+}
+
+.btn-book.disabled,
+.btn-book[disabled],
+fieldset[disabled] .btn-book,
+.btn-book.disabled:hover,
+.btn-book[disabled]:hover,
+fieldset[disabled] .btn-book:hover,
+.btn-book.disabled:focus,
+.btn-book[disabled]:focus,
+fieldset[disabled] .btn-book:focus,
+.btn-book.disabled:active,
+.btn-book[disabled]:active,
+fieldset[disabled] .btn-book:active,
+.btn-book.disabled.active,
+.btn-book[disabled].active,
+fieldset[disabled] .btn-book.active {
+  background-color: #48A369;
+  border-color: #DAD8E8;
+}
+
+.btn-book .badge {
+  color: #48A369;
+  background-color: #F7F7F7;
+}
+
+.btn-delete {
+  color: #F7F7F7;
+  background-color: #D12C2C;
+  border-color: #DAD8E8;
+  border-radius: 10px;
+}
+
+.btn-delete:hover,
+.btn-delete:focus,
+.btn-delete:active,
+.btn-delete.active,
+.open .dropdown-toggle.btn-delete {
+  color: #F7F7F7;
+  background-color: #F73131;
+  border-color: #DAD8E8;
+}
+
+.btn-delete:active,
+.btn-delete.active,
+.open .dropdown-toggle.btn-delete {
+  background-image: none;
+}
+
