@@ -1,0 +1,18 @@
+<div class='container'>
+<h1><%=@booking.meal.title%></h1>
+<ul>
+  <li>Meal: <%=@booking.meal.meal_type%></li>
+  <li>ID: <%=@booking.meal.id%></li>
+  <li>Date: <%=@booking.meal.date%></li>
+  <li>Time: <%=@booking.meal.time%></li>
+  <li>Conversation topic: <%=@booking.meal.topic%></li>
+  <li>Seats: <%=@booking.seats%></li>
+</ul>
+
+
+<br>
+<br>
+
+<%=link_to 'Delete booking', booking_path(@booking), method: :delete, data: { confirm: "Are you sure?" }%>
+
+</div>
