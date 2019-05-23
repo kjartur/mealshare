@@ -1,23 +1,28 @@
-<div class='container'>
-<h1><%=@meal.title%></h1>
-<ul>
-  <li>Meal: <%=@meal.meal_type%></li>
-  <li>ID: <%=@meal.id%></li>
-  <li>Date: <%=@meal.date%></li>
-  <li>Time: <%=@meal.time%></li>
-  <li>Conversation topic: <%=@meal.topic%></li>
-  <li>Seats: <%=@meal.seats%></li>
-  <% @meal.bookings.each do |b| %>
-    <!-- <%= b.seats %> -->
-  <% end %>
-</ul>
-
-
-<%= link_to 'Book this meal', new_meal_booking_path(@meal) %>
-
-<br>
-<br>
-
-<%=link_to 'Delete meal', meal_path(@meal), method: :delete, data: { confirm: "Are you sure?" }%>
-
+<div class="container" align="center">
+  <div class="card-trip">
+    <img src="https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg">
+    <div class="card-trip-infos">
+      <div>
+        <h1><%=@meal.title%></h2>
+        <h2>Conversation topic: <%=@meal.topic%></h2>
+        <h2>Time: <%=@meal.time%></p>
+      </div>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+      <div class="card-trip-meal-type">
+        <h2><%=@meal.meal_type%></p>
+      </div>
+      <br>
+    </div>
+      <div class="card-trip-buttons">
+        <div class="btn btn-primary">
+          <%= link_to 'Book this meal', new_meal_booking_path(@meal), :class => "btn" %>
+        </div>
+        <div class="btn btn-primary">
+          <%=link_to 'Delete meal', meal_path(@meal), :class => "btn", method: :delete, data: { confirm: "Are you sure?" }%>
+        </div>
+      </div>
+  </div>
 </div>
+
+
+
