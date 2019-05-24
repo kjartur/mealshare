@@ -49,6 +49,14 @@ class MealsController < ApplicationController
 
   end
 
+  def results
+    if params[:query].present?
+      @meals = Meal.near(params[:query], 10)
+    else
+      @meals = Meal.all
+    end
+  end
+
   private
 
   def review_params
