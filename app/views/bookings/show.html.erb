@@ -1,18 +1,24 @@
-<div class='container'>
-<h1><%=@booking.meal.title%></h1>
-<ul>
-  <li>Meal: <%=@booking.meal.meal_type%></li>
-  <li>ID: <%=@booking.meal.id%></li>
-  <li>Date: <%=@booking.meal.date%></li>
-  <li>Time: <%=@booking.meal.time%></li>
-  <li>Conversation topic: <%=@booking.meal.topic%></li>
-  <li>Seats: <%=@booking.seats%></li>
-</ul>
-
-
-<br>
-<br>
-
-<%=link_to 'Delete booking', booking_path(@booking), method: :delete, data: { confirm: "Are you sure?" }%>
-
+<div class="booking-container" align="center">
+  <div class="card-trip">
+    <img src="https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg">
+    <div class="card-trip-infos">
+      <div class="card-trip-text">
+        <h1><%=@booking.meal.title%></h2>
+        <h2>Conversation topic: <%=@booking.meal.topic%></h2>
+        <h2>Time: <%=@booking.meal.time%></p>
+      </div>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+      <div class="card-trip-meal-type">
+        <h2><%=@booking.meal.meal_type%></p>
+      </div>
+      <br>
+    </div>
+      <div class="card-trip-buttons" justify-content="right">
+        <div class="btn btn-delete">
+          <%=link_to 'Delete booking', booking_path(@booking), :class => "btn", method: :delete, data: { confirm: "Are you sure?" }%>
+        </div>
+      </div>
+  </div>
 </div>
+
+
