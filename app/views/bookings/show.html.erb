@@ -4,8 +4,8 @@
     <div class="card-trip-infos">
       <div class="card-trip-text">
         <h1><%=@booking.meal.title%></h2>
-        <h2>Conversation topic: <%=@booking.meal.topic%></h2>
-        <h2>Time: <%=@booking.meal.time%></p>
+        <h2>Description: <%=@booking.meal.topic%></h2>
+        <h2>Time: <%=@booking.meal.time.strftime("%A, %d %b at %l:%M %p")%></p>
         <h2>Address: <%=@booking.meal.address%></p>
       </div>
       <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
