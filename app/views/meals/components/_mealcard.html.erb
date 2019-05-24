@@ -1,0 +1,27 @@
+<div class="meal-container" align="center">
+  <div class="card-trip">
+    <img src="https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg">
+    <div class="card-trip-infos">
+      <div class="card-trip-text">
+        <h1><%=@meal.title%></h2>
+        <h2>Conversation topic: <%=@meal.topic%></h2>
+        <h2>Seats: <%=@meal.seats%></h2>
+        <h2>Date: <%=@meal.time%></h2>
+        <h2>Address: <%=@meal.city%>, <%=@meal.address%>, <%=@meal.post_code%></h2>
+      </div>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+      <div class="card-trip-meal-type">
+        <h2><%=@meal.meal_type%></p>
+      </div>
+      <br>
+    </div>
+      <div class="card-trip-buttons">
+        <div class="btn btn-book">
+          <%= link_to 'Book this meal', new_meal_booking_path(@meal), :class => "btn" %>
+        </div>
+        <div class="btn btn-delete">
+          <%=link_to 'Delete meal', meal_path(@meal), :class => "btn", method: :delete, data: { confirm: "Are you sure?" }%>
+        </div>
+      </div>
+  </div>
+</div>
