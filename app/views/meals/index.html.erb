@@ -1,9 +1,22 @@
 <div class='container'>
  <h1>My Meals:</h1>
 
- <ul>
-  <% @meals.each do |meal| %>
-  <li><%=link_to meal.title, meal_path(meal)%></li>
-  <%end%>
- </ul>
+ <div class="container">
+  <div class="row">
+    <% @meals.each do |meal| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg)">
+        <%= link_to "", meal_path(meal), class: "card-link" %>
+        <div>
+          <h3><%= meal.meal_type %>:</h3>
+          <br>
+          <h4><%= meal.title %></h4>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
 </div>
+
+</div>
+
