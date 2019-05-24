@@ -46,7 +46,6 @@ class MealsController < ApplicationController
       @meals = Meal.all
       redirect_to "/"
     end
-
   end
 
   def results
@@ -55,6 +54,14 @@ class MealsController < ApplicationController
     else
       @meals = Meal.all
     end
+
+    @markers = @meals.map do |meal|
+      {
+        lat: meal.latitude,
+        lng: meal.longitude
+      }
+    end
+
   end
 
   private
