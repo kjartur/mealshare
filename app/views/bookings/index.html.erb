@@ -1,11 +1,18 @@
 <div class='container'>
- <h1>My Bookings</h1>
+ <h1>My Bookings:</h1>
 
-<div id="link list">
-  <ul>
-    <% @bookings.each do |booking|%>
-      <li><%=link_to booking.meal.title, booking_path(booking)%></li>
-    <% end %>
-  </ul>
- </div>
+  <div class="row">
+    <% @bookings.each do |booking| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg)">
+        <%= link_to "", booking_path(booking), class: "card-link" %>
+          <div>
+            <h3><%= booking.meal.meal_type %>:</h3>
+            <br>
+            <h4><%= booking.meal.title %></h4>
+          </div>
+      </div>
+    </div>
+      <% end %>
+</div>
 </div>
