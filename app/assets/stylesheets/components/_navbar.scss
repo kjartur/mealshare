@@ -1,6 +1,27 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #b5b5b5;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 0px 7px 7px 1px rgba(0,0,0,0.15);
+  z-index: 2000;
+  height: 75px;
+  a{
+    color: white;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 150ms ease-in;
+    &.nav-link{
+      color: white !important;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+    &:hover{
+      // font-weight: 600;
+      opacity: 1;
+    }
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,7 +29,10 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 50px;
+  width: 60px;
 }
 
+body{
+  padding-top: 75px;
+}
 
