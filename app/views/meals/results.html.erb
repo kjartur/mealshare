@@ -18,12 +18,19 @@
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg)">
         <%= link_to "", meal_path(meal), class: "card-link" %>
         <div>
-          <h3><%= meal.meal_type %>:</h3>
-          <br>
-          <h4><%= meal.title %></h4>
+            <div class="card-trip-meal-type-small">
+              <h4><%= meal.meal_type %></h4>
+            </div>
+           <div class="chairs-cards">
+            <% meal.seats.times do |seat| %>
+            <span class="fas fa-chair"></span>
+            <% end %>
+           </div>
+          <h4><i>"<%= meal.title %>"</i></h4>
           </div>
         </div>
       </div>
       <% end %>
     </div>
 </div>
+

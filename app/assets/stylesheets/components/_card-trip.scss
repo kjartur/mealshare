@@ -151,8 +151,21 @@ fieldset[disabled] .btn-book.active {
   background-image: none;
 }
 
-.fa-chair {
+.chairs {
   font-size: 25px;
   color: #3f915c;
+}
+
+.card-trip-meal-type-small {
+ position: absolute;
+ color: #455627;
+ background: #ffe5b4;
+ text-align: center;
+ padding: 5px;
+ border-radius: 28px;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ right: 102px;
+ top: 141px;
+ width: 119px;
 }
 
