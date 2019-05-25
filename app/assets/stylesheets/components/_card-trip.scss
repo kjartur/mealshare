@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: #d6d6d6;
+  background: #ffffff;
   text-align: left;
   padding: 20px;
   border-radius: 28px;
@@ -149,5 +149,9 @@ fieldset[disabled] .btn-book.active {
 .btn-delete.active,
 .open .dropdown-toggle.btn-delete {
   background-image: none;
+}
+
+.fa-chair {
+  font-size: 25px;
 }
 
