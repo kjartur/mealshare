@@ -2,12 +2,19 @@
   <div class="card-trip">
     <img src="https://i.ibb.co/L93QRNJ/chris-lawton-165884-unsplash.jpg">
     <div class="card-trip-infos">
+      <div class="chairs">
+           <% @meal.seats.to_i.times do |meal| %>
+           <span class="fas fa-chair"></span>
+         <% end %>
+        </div>
       <div class="card-trip-text">
         <h1><%=@meal.title%></h2>
-        <h2>Description: <%=@meal.topic%></h2>
-        <h2>Seats: <%=@meal.seats%></h2>
-        <h2>Time: <%=@meal.time.strftime("%A, %d %b at %l:%M %p")%></p>
-        <h2>Address: <%=@meal.city%>, <%=@meal.address%>, <%=@meal.post_code%></h2>
+
+        <i><h3>"<%=@meal.topic%>"</h3></i>
+        <br>
+        <h4><b>Time:</b> <%=@meal.time.strftime("%A, %d %b at %l:%M %p")%></h4>
+        <h4><b>Address:</b> <%=@meal.city%>, <%=@meal.address%>, <%=@meal.post_code%></h4>
+
       </div>
       <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
       <div class="card-trip-meal-type">
