@@ -72,9 +72,9 @@
   padding: 7px;
   border-radius: 28px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  top: -309px;
+  top: -293px;
   width: 163px;
-  align-self: center;
+  right: 591px;
 
 }
 
@@ -154,7 +154,11 @@ fieldset[disabled] .btn-book.active {
 
 .chairs {
   font-size: 25px;
-  color: #3f915c;
+  color: #337149;
+  position: absolute;
+  right: 583px;
+  top: 9px;
+  width: 161px;
 }
 
 .card-trip-meal-type-small {
@@ -163,10 +167,10 @@ fieldset[disabled] .btn-book.active {
  background: #ffe5b4;
  text-align: center;
  padding: 5px;
- border-radius: 28px;
+ border-radius: 11px;
  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
- right: 115px;
- top: -5px;
+ right: 211px;
+ top: 8px;
  width: 119px;
 }
 
