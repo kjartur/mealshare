@@ -1,7 +1,7 @@
 
 .card-trip {
   margin: 30px auto;
-  width: 100%;
+  width: 80%;
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -67,14 +67,15 @@
 
 .card-trip-infos .card-trip-meal-type {
   position: absolute;
-  background: #e4e4e4;
+  background: #ffe5b4;
   text-align: center;
   padding: 7px;
   border-radius: 28px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  right: 780px;
-  top: -291px;
+  top: -309px;
   width: 163px;
+  align-self: center;
+
 }
 
 .card-trip-text {
