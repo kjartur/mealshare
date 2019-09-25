@@ -9,6 +9,7 @@ $headings-font-family:    $headers-font;
 $body-bg:                 #8fb197;
 $font-size-base: 1rem;
 
+
 // Colors
 $body-color: $gray;
 $primary:    $blue;
@@ -23,3 +24,7 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+
+.body {
+  margin-bottom: 80px;
+}

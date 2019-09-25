@@ -26,8 +26,9 @@
         <div class="btn btn-book">
           <%= link_to 'Book this meal', new_meal_booking_path(@meal), :class => "btn" %>
         </div>
-        <div class="btn btn-delete">
-          <%=link_to 'Delete meal', meal_path(@meal), :class => "btn", method: :delete, data: { confirm: "Are you sure?" }%>
+        <div class="fal fa-trash-alt">
+          <%=link_to 'Delete meal', meal_path(@meal), :class => "btn btn", method: :delete, data: { confirm: "Are you sure?" }%>
+          <i class="fal fa-trash-alt"></i>
         </div>
       </div>
   </div>
